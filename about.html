@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MySite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .about-header {
+            background-color: #5C6BC0;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .about-header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .about-header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .team-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .team-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .team-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .team-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .team-card p {
+            font-size: 1em;
+            color: #777;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .team-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+
+    <section class="about-header">
+        <h1>About Us</h1>
+        <p>We are a passionate team dedicated to building innovative solutions and delivering quality web experiences.</p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+                <p>John is the visionary behind MySite. With years of experience in the tech industry, he leads the team with passion and dedication.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Jane Smith</h3>
+                <p>Lead Developer</p>
+                <p>Jane is an expert in full-stack development. She ensures that the web solutions we deliver are robust and scalable.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="https://via.placeholder.com/150" alt="Team Member">
+                <h3>Mike Johnson</h3>
+                <p>UI/UX Designer</p>
+                <p>Mike is passionate about creating seamless, intuitive user interfaces. He designs all our projects with the user in mind.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MySite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
